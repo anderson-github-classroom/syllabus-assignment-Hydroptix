@@ -1,26 +1,155 @@
-# CSC 448 Template Lab
+---
+jupyter:
+  jupytext:
+    formats: ipynb,md,py
+    text_representation:
+      extension: .md
+      format_name: markdown
+      format_version: '1.2'
+      jupytext_version: 1.4.1
+  kernelspec:
+    display_name: Python 3
+    language: python
+    name: python3
+---
 
-## Dependencies
-This class relies on the following packages being installed.
-* Anaconda Python 3.7
-* JupyterLab. I'm going to assume you are using this as your primary tool for this class. All videos will reference and assume this to be the case unless otherwise specified. 
-* jupytext (installed via ``pip install jupytext``). After you install this, make sure you restart you jupyterlab environment.
+# Name(s)
+**Samuel Frazee**
 
-## Instructions
-This is a blank repo containing information about working on and submitting your labs and assignments.
 
-* The lab assignments are located in https://github.com/anderson-github-classroom/csc-448-student
-* You will only need to clone csc-448-student repo once. Each week (or more frequent) you can issue a ``git pull`` and receive updated information.
-* You should not make changes inside csc-448-student. It should be viewed as read only; however, if you do make changes, please copy/save them manually and then issue a ``git stash`` before trying ``git pull``.
-* To work on your lab, click on the link in the schedule, accept the GitHub assignment which will create you an individual repo. It is in this individual repo where you will copy the lab assignment from csc-448-student. 
-* When you are done with the lab (or whenever you want), add your changes, commit your changes, and push your changes.
+**Instructions:** This is an individual assignment. Complete the following code and push to get your score.
 
-## Testing your code locally
-* Install pytest
-    * ``pip install pytest``
-* Issue the following command once on your system:
-    * ``git clone https://github.com/anderson-github-classroom/csc-448-student ../csc-448-student``
-* Issue this command everytime you want to test. It will try to automatically detect what assignment you are working on.
-    *  ./run_tests_locally.sh
-* You can always try to test specific questions using:
-    * pytest ../csc-448-student/tests/test_Syllabus.py::test_question_1
+
+I am providing the autograder answers locally so you may test your code before pushing. I will be reviewing your submissions, and if I find you are circumventing the autograder in any manner, you will receive a 0 on this assignment and your case will be reported to the honor board for review. i.e., approach the assignment in a genuine manner and you have nothing to worry about.
+
+```python
+```
+
+**Question 1.**
+When will new material be available each week?
+
+
+You can answer the question by defining an anonymous function. This creates a function that I can test using pytest. You don't have to worry about the details. You just need to answer the question by changing the string argument that is currently set to "D". I know this is a bit weird, but I want you to get used to submitting code as early as possible.
+
+```python
+# Nothing to modify in this cell
+def question_1(answer):
+    answers = {
+        "A": "Monday morning",
+        "B": "Sunday night",
+        "C": "Monday evening",
+        "D": "I don't know"
+    }
+    try:
+        return answers[answer]
+    except:
+        return "Not a valid answer"
+```
+
+```python
+# YOUR SOLUTION HERE
+# Sample incorrect answer
+answer_question_1 = lambda: question_1("Z")
+```
+
+**Question 2.**
+Do I need to buy the textbook?
+
+```python
+# Nothing to modify in this cell
+def question_2(answer):
+    answers = {
+        "A": "No",
+        "B": "Maybe",
+        "C": "Yes. You will struggle with some of the chapters without the textbook",
+    }
+    try:
+        return answers[answer]
+    except:
+        return "Not a valid answer"
+```
+
+```python
+# YOUR SOLUTION HERE
+# Sample incorrect answer
+answer_question_2 = lambda: question_2("Z")
+```
+
+**Question 3.**
+Are these any required times that I be online?
+
+```python
+# Nothing to modify in this cell
+def question_3(answer):
+    answers = {
+        "A": "Yes",
+        "B": "No"
+    }
+    try:
+        return answers[answer]
+    except:
+        return "Not a valid answer"
+```
+
+```python
+# YOUR SOLUTION HERE
+# Sample incorrect answer
+answer_question_3 = lambda: question_3("Z")
+```
+
+**Question 4.**
+What software will I use to complete the assignments?
+
+```python
+# Nothing to modify in this cell
+def question_4(answer):
+    answers = {
+        "A": "Java",
+        "B": "Netbeans",
+        "C": "Anaconda"
+    }
+    try:
+        return answers[answer]
+    except:
+        return "Not a valid answer"
+```
+
+```python
+# YOUR SOLUTION HERE
+# Sample incorrect answer
+answer_question_4 = lambda: question_4("Z")
+```
+
+**Question 5.**
+Do I need to participate in this class or can I just do the labs and assignments?
+
+```python
+# Nothing to modify in this cell
+def question_5(answer):
+    answers = {
+        "A": "Yes. If you want to get anything higher than a C, you'll need to do more than the labs and assignments",
+        "B": "No",
+    }
+    try:
+        return answers[answer]
+    except:
+        return "Not a valid answer"
+```
+
+```python
+# YOUR SOLUTION HERE
+# Sample incorrect answer
+answer_question_5 = lambda: question_5("Z")
+```
+
+```python
+# Don't forget to push!
+```
+
+```python
+
+```
+
+```python
+
+```
